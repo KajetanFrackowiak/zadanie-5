@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Kajetan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 04:48:39 PM"/>
+        <attribute name="created" value="S2FqZXRhbjtERVNLVE9QLTVHVEJJQlU7MjAyMi0xMC0zMDswNDoyMDoxNSBQTTszMDQ5"/>
+        <attribute name="edited" value="S2FqZXRhbjtERVNLVE9QLTVHVEJJQlU7MjAyMi0xMC0zMDswNDo0ODozOSBQTTsxOzMxNzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, P, srednia, sredniaP, i, ocena" type="Integer" array="False" size=""/>
+            <assign variable="sredniaP" expression="0"/>
+            <input variable="N"/>
+            <input variable="P"/>
+            <for variable="i" start="1" end="P" direction="inc" step="1">
+                <input variable="ocena"/>
+                <assign variable="sredniaP" expression="sredniaP+ocena"/>
+            </for>
+            <output expression="(((N-P)*(-3))+sredniaP)/N" newline="True"/>
+            <output expression="(((N-P)*3)+sredniaP)/N" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
